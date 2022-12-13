@@ -1,0 +1,24 @@
+<!--pages/2-10/2-10.wxml-->
+<view id="box">
+  <view style="margin: 16px 0;" id="title">
+    成绩计算器
+  </view>
+  <view id="input-box">
+    <view class="child-box" wx:key="input" wx:for='{{[{title:"姓&emsp;&emsp;名",placeholder:"请输入你的名字",type:"text",id:"stuName"},{title:"语文成绩",placeholder:"请输入语文成绩",type:"number",id:"chineseScore"},{title:"数学成绩",placeholder:"请输入数学成绩",type:"number",id:"mathScore"}]}}'>
+      <text class="subtitle" decode>{{item.title}}</text>
+      <input id="{{item.id}}" bindblur="dataInput" class="input" type="{{item.type}}" placeholder="{{item.placeholder}}" placeholder-class="input-placeholder" />
+    </view>
+  </view>
+  <button bindtap="query" style="margin: 16px auto;">提交</button>
+  <view id="output-box" hidden="{{resultHidden}}">
+    <view id="title">
+      查询结果
+    </view>
+    <view class="child-box" wx:key="result" wx:for='{{output}}'>
+      <text class="subtitle" decode>{{item.title}}</text>
+      <view id="output">
+        {{item.display}}
+      </view>
+    </view>
+  </view>
+</view>

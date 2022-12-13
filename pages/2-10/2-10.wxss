@@ -1,0 +1,45 @@
+/* pages/2-10/2-10.wxss */
+#box {
+  border: 1px dashed rgba(113, 56, 99, 0.8);
+  margin: 16px;
+}
+
+#title {
+  font-size: 20px;
+  text-align: center;
+  line-height: 36px;
+  letter-spacing: 2px;
+}
+
+.child-box {
+  display: flex;
+  margin: 4px 8px;
+}
+
+.subtitle {
+  margin-right: 16px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+page {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.input-placeholder {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#output-box {
+  background-color: white;
+  margin: 16px;
+  padding: 16px;
+  border: 5px dotted skyblue;
+}
+
+button {
+  color: rgba(255,255,255,0.8);
+  background-color: skyblue;
+}

@@ -1,0 +1,19 @@
+/**index.wxss**/
+.style0 {
+  width: 100%;
+  text-align: lefts;
+  text-decoration: underline;
+  letter-spacing: 2.2px;
+  font-size: 24px;
+  text-indent: 30px;
+  color: #01ca99;
+}
+
+.style1 {
+  display:flex;
+  position: absolute;
+  font-size: 64px;
+  text-align: center;
+  margin-top: 64px;
+  text-shadow: 1px 1px rgb(255,255,255,0.3);
+}

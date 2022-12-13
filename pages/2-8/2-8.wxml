@@ -1,0 +1,26 @@
+<!--pages/2-8/2-8.wxml-->
+<view id="box">
+  <view id="title">
+    摄氏温度转华氏温度
+  </view>
+  <view id="input-box" class="child-box">
+    <view class="subtitle">
+      摄氏温度
+    </view>
+    <input id="input" type="digit" placeholder="点我输入摄氏温度" bindinput="calc" />
+    <view class="unit">
+      ℃
+    </view>
+  </view>
+  <view id="output-box" class="child-box">
+    <view class="subtitle">
+      华氏温度
+    </view>
+    <view id="output">
+      {{calcResult}}
+    </view>
+    <view class="unit">
+      ℉
+    </view>
+  </view>
+</view>

@@ -1,0 +1,37 @@
+<!--pages/2-5/2-5.wxml-->
+<view class="box">
+  <view wx:for="{{[1,1,1,1,1]}}" wx:key="topBox" class="boxItem" id="box{{index}}" style="order:{{index}};">
+    box{{index}}
+  </view>
+  <view class="boxItem" id="box5">
+    box5
+  </view>
+</view>
+
+<view class="box">
+  <view class="boxItem">
+    box6
+  </view>
+  <view style="display: flex; flex-direction: column;">
+    <view class="boxItem">
+    box7
+  </view>
+  <view class="boxItem">
+    box8
+  </view>
+  </view>
+</view>
+
+<view class="box" style="flex-direction: column;">
+  <view class="boxItem">
+    box9
+  </view>
+  <view style="display: flex; flex-direction: row; justify-content: space-evenly;">
+    <view class="boxItem">
+    box10
+  </view>
+  <view class="boxItem">
+    box11
+  </view>
+  </view>
+</view>

@@ -1,0 +1,63 @@
+/* pages/2-7/2-7.wxss */
+.box {
+  border: 1px dashed #112e36;
+  margin: 16px;
+}
+
+#box0 {
+  width: 200px;
+  margin: 16px auto;
+}
+
+.child {
+  text-align: center;
+  background-color: aliceblue;
+  border: 2px dotted #96a5fc;
+  line-height: 40px;
+}
+
+#child0 {
+  width: 100px;
+  margin: 0 auto;
+}
+
+#child1 {
+  width: 90px;
+  float: left
+}
+
+#child2 {
+  width: 90px;
+  float: right;
+}
+
+#child3 {
+  width: 100px;
+  clear: both;
+  margin: 0 auto;
+}
+
+#child5 {
+  width: 20%;
+  float: left;
+  border: none;
+  background-color: aqua;
+}
+
+#child6 {
+  width: 60%;
+  float: left;
+  border: none;
+  background-color: aquamarine;
+}
+
+#child7 {
+  width: 20%;
+  float: right;
+  border: none;
+  background-color: aqua;
+}
+
+#child8 {
+  clear: both;
+}

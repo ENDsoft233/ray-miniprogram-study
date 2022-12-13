@@ -1,0 +1,20 @@
+<!--pages/2-9/2-9.wxml-->
+<view id="box">
+  <view id="title">
+    条件语句和数学函数
+  </view>
+  <view id="input-box" class="child-box">
+    <view class="subtitle">
+      x=
+    </view>
+    <input id="input" type="digit" placeholder="请输入 x" bindinput="calc" />
+  </view>
+  <view id="output-box" class="child-box">
+    <view class="subtitle">
+      y=
+    </view>
+    <view id="output">
+      {{calcResult}}
+    </view>
+  </view>
+</view>

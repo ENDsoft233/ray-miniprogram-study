@@ -1,0 +1,6 @@
+<!--pages/2-4/2-4.wxml-->
+<view class="box">
+  <view wx:for="{{[0,1,2]}}" wx:key="box" class="boxItem" id="box{{index}}">
+    box{{index}}
+  </view>
+</view>
