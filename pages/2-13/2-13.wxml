@@ -1,0 +1,11 @@
+<!--pages/2-13/2-13.wxml-->
+<view id="box" hidden="{{hidden}}">
+  <view id="title">
+    计时器
+  </view>
+  <view id="counter">{{counterHidden ? '!' : count}}</view>
+  <view id="action">
+    <button class="actionBtn" bindtap="start">开始计时</button>
+    <button class="actionBtn" bindtap="end">停止计时</button>
+  </view>
+</view>
