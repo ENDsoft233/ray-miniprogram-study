@@ -1,0 +1,23 @@
+<!--pages/2-12/2-12.wxml-->
+<view id="box">
+  <view id="title">
+    随机数求和
+  </view>
+  <view id="array-box" class="child-box">
+    <view class="subtitle">
+      产生的随机数列为：
+    </view>
+    <view wx:key="output" wx:for="{{rand}}" id="output">
+      {{item}}
+    </view>
+  </view>
+  <view id="sum-box" class="child-box">
+    <view class="subtitle">
+      随机数列求和
+    </view>
+    <view id="outputSum">
+      {{sum}}
+    </view>
+  </view>
+  <button type="primary" bindtap="newRand" style="margin: 8px auto;">产生新的随机数列</button>
+</view>
