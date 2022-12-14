@@ -3,7 +3,7 @@
   <view id="title">
     2-6 导航与布局
   </view>
-  <navigator wx:for='{{[{id:"2-1",title:"字体样式设置"},{id:"2-2",title:"文本样式设置"},{id:"2-3",title:"图片和声音"},{id:"2-4",title:"盒模型"},{id:"2-5",title:"flex 弹性盒模型布局"},{id:"2-6",title:"导航与布局"},{id:"2-7",title:"float 页面布局"},{id:"2-8",title:"摄氏温度转华氏温度"},{id:"2-9",title:"条件语句和数学函数"},{id:"2-10",title:"成绩计算器"}]}}' url='../{{item.id}}/{{item.id}}' wx:key="navigator">
+  <navigator wx:for='{{[{id:"2-1",title:"字体样式设置"},{id:"2-2",title:"文本样式设置"},{id:"2-3",title:"图片和声音"},{id:"2-4",title:"盒模型"},{id:"2-5",title:"flex 弹性盒模型布局"},{id:"2-6",title:"导航与布局"},{id:"2-7",title:"float 页面布局"},{id:"2-8",title:"摄氏温度转华氏温度"},{id:"2-9",title:"条件语句和数学函数"},{id:"2-10",title:"成绩计算器"},{id:"2-11",title:"利用循环语句求和"},{id:"2-12",title:"随机数列求和"},{id:"2-13",title:"计时器（启动隐藏两秒）"}]}}' url='../{{item.id}}/{{item.id}}' wx:key="navigator">
     <icon type="waiting" wx:if="{{index == 1}}" />
     <icon type="success" wx:if="{{index != 1 && index != 5}}" />
     <icon type="success_no_circle" wx:if="{{index==5}}" />
