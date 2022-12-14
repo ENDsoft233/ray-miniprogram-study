@@ -1,0 +1,25 @@
+<!--pages/2-11/2-11.wxml-->
+<view id="box">
+  <view id="title">
+    利用循环语句求和
+  </view>
+  <view id="input-box" class="child-box">
+    <view class="subtitle">
+      起始值
+    </view>
+    <input id="start" type="digit" placeholder="请输入起点数值" bindinput="dataInput" />
+  </view>
+  <view id="input-box" class="child-box">
+    <text class="subtitle" decode>终&emsp;值</text>
+    <input id="end" type="digit" placeholder="请输入终点数值" bindinput="dataInput" />
+  </view>
+  <button type="primary" bindtap="calc" style="margin: 8px auto;">求和</button>
+  <view id="output-box" class="child-box">
+    <view class="subtitle">
+      两数之间的和为：
+    </view>
+    <view id="output">
+      {{sum}}
+    </view>
+  </view>
+</view>

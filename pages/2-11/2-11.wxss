@@ -1,0 +1,32 @@
+/* pages/2-11/2-11.wxss */
+#box {
+  border: 1px dashed rgba(113, 56, 99, 0.8);
+  margin: 16px;
+}
+
+#title {
+  font-size: 20px;
+  text-align: center;
+  line-height: 36px;
+  letter-spacing: 2px;
+}
+
+.child-box {
+  display: flex;
+  margin: 4px 8px;
+}
+
+.subtitle {
+  margin-right: 4px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.unit {
+  position: absolute;
+  right: 24px;
+}
+
+input {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
