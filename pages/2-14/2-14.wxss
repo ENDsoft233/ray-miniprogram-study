@@ -1,0 +1,27 @@
+/* pages/2-14/2-14.wxss */
+#box {
+  border: 1px dashed rgba(113, 56, 99, 0.8);
+  margin: 16px;
+}
+
+#title {
+  font-size: 20px;
+  text-align: center;
+  line-height: 36px;
+  letter-spacing: 2px;
+}
+
+#blockFather {
+  display: flex;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.block {
+  width: 300rpx;
+  height: 500rpx;
+}
+
+.btn {
+  margin: 10px auto;
+}

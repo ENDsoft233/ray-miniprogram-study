@@ -1,0 +1,13 @@
+<!--pages/2-14/2-14.wxml-->
+<view id="box">
+  <view id="title">
+    变化的三色旗
+  </view>
+  <view id="blockFather">
+    <view wx:key="blocks" wx:for="{{color}}" style="background-color: {{item}};" class="block">
+    </view>
+  </view>
+  <button type="primary" class="btn" bindtap="randomColor">改变颜色</button>
+  <button type="primary" class="btn" bindtap="clearTimer" disabled="{{timerId === null}}">停止自动变化</button>
+  <button type="primary" class="btn" bindtap="startTimer" disabled="{{timerId !== null}}">开始自动变化</button>
+</view>
