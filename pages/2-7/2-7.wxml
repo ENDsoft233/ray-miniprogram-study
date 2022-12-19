@@ -2,7 +2,7 @@
 <view id="container">
   <view wx:for="{{[[0,1,2,3],[4,5,6,7,8]]}}" class="box" id="box{{index}}" wx:key="box" wx:for-item="array">
     <view wx:for="{{array}}" wx:key="child" class="child" id="child{{item}}">
-    child{{item}}
+      child{{item}}
     </view>
   </view>
 </view>

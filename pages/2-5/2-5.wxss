@@ -1,25 +1,25 @@
 /* pages/2-5/2-5.wxss */
-.box{
+.box {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  
+
   margin: 16px;
-  border: 4px dotted rgba(0,0,0,0.4);
+  border: 4px dotted rgba(0, 0, 0, 0.4);
   padding-bottom: 8px;
 }
 
-.boxItem{
-  border: 2px dashed rgba(255,67,118,0.6);
-  padding:16px;
+.boxItem {
+  border: 2px dashed rgba(255, 67, 118, 0.6);
+  padding: 16px;
   background-color: rgba(188, 33, 219, 0.4);
-  backdrop-filter: blur(8px); 
-  color:white;
+  backdrop-filter: blur(8px);
+  color: white;
   margin-top: 8px;
 }
 
-#box5{
+#box5 {
   order: 2;
   background-color: rgba(33, 120, 219, 0.4);
 }

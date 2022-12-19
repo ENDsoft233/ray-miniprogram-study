@@ -1,21 +1,21 @@
 /* pages/2-4/2-4.wxss */
-.box{
+.box {
   margin: 16px;
-  padding:16px;
-  border: 4px dotted rgba(0,0,0,0.4);
+  padding: 16px;
+  border: 4px dotted rgba(0, 0, 0, 0.4);
 }
 
-.boxItem{
+.boxItem {
   border: 2px solid rgba(89, 136, 108, 0.4);
 }
 
-#box0{
+#box0 {
   padding: 16px;
   width: auto;
   margin: 32px;
 }
 
-#box1{
+#box1 {
   background-color: rgba(18, 85, 230, 0.6);
   text-align: center;
   color: white;
@@ -23,14 +23,14 @@
   margin: 0 16px;
 }
 
-#box2{
+#box2 {
   margin-left: 64px;
-  padding-right:32px;
-  border: 2px dashed rgba(255,67,118,0.6);
+  padding-right: 32px;
+  border: 2px dashed rgba(255, 67, 118, 0.6);
   margin-top: -16px;
   text-align: right;
-  background-color: rgba(30,67,118,0.3);
+  background-color: rgba(30, 67, 118, 0.3);
   backdrop-filter: blur(8px);
-  color:white;
+  color: white;
   line-height: 32px;
 }

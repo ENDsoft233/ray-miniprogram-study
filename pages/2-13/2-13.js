@@ -2,18 +2,12 @@
 let timer, timerId;
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
     hidden: true,
     count: 10,
     counterHidden: false
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onLoad() {
     let that = this;
     setTimeout(() => that.show(), 2000)

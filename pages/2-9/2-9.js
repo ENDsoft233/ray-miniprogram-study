@@ -12,9 +12,9 @@ Page({
     } else if (input < 10) {
       result = Math.exp(input) * Math.sin(input)
     } else if (input < 20) {
-      result = Math.pow(input,3)
+      result = Math.pow(input, 3)
     } else {
-      result = (3+2*input)*Math.log(input)
+      result = (3 + 2 * input) * Math.log(input)
     }
     this.setData({
       calcResult: e.detail.value === "" ? "正在等待输入.." : result

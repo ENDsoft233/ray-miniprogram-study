@@ -14,11 +14,11 @@
   </view>
   <view style="display: flex; flex-direction: column;">
     <view class="boxItem">
-    box7
-  </view>
-  <view class="boxItem">
-    box8
-  </view>
+      box7
+    </view>
+    <view class="boxItem">
+      box8
+    </view>
   </view>
 </view>
 
@@ -28,10 +28,10 @@
   </view>
   <view style="display: flex; flex-direction: row; justify-content: space-evenly;">
     <view class="boxItem">
-    box10
-  </view>
-  <view class="boxItem">
-    box11
-  </view>
+      box10
+    </view>
+    <view class="boxItem">
+      box11
+    </view>
   </view>
 </view>

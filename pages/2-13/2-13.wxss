@@ -1,15 +1,4 @@
 /* pages/2-13/2-13.wxss */
-#box {
-  border: 1px dashed rgba(113, 56, 99, 0.8);
-  margin: 16px;
-}
-
-#title {
-  font-size: 20px;
-  text-align: center;
-  line-height: 36px;
-  letter-spacing: 2px;
-}
 
 #counter {
   width: 90%;

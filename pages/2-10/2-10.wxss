@@ -1,15 +1,4 @@
 /* pages/2-10/2-10.wxss */
-#box {
-  border: 1px dashed rgba(113, 56, 99, 0.8);
-  margin: 16px;
-}
-
-#title {
-  font-size: 20px;
-  text-align: center;
-  line-height: 36px;
-  letter-spacing: 2px;
-}
 
 .child-box {
   display: flex;
@@ -40,6 +29,6 @@ page {
 }
 
 button {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   background-color: skyblue;
 }
