@@ -1,0 +1,12 @@
+/* pages/3-2/3-2.wxss */
+#tips {
+  text-align: center;
+  font-size: 16px;
+  color: darkgray;
+  border: 1px dotted darkgray;
+  margin: 0 16px;
+}
+
+#btn {
+  margin: 16px auto;
+}

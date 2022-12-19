@@ -1,0 +1,10 @@
+<!--pages/3-2/3-2.wxml-->
+<view id="box">
+  <view id="title">
+   小程序的执行顺序 
+  </view>
+  <view id="tips">
+    本节旨在理解逻辑层各函数的用途，请见 Console。
+  </view>
+  <button type="primary" id="btn" bindtap="navigate">打开子页面</button>
+</view>
