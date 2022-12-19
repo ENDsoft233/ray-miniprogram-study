@@ -1,0 +1,25 @@
+<!--pages/3-3/3-3.wxml-->
+<view id="box">
+  <view id="title">
+    数据及事件绑定
+  </view>
+  <view id="tips">
+    本章旨在理解 mustache 双大括号进行的渲染层和逻辑层数据绑定及 bindtap 等按钮的事件绑定。其实在第二章中已经应用过多次。
+  </view>
+  <view class="blocks">
+    算数运算绑定： {{a}} + {{b}} + {{c}} = {{a+b+c}}
+  </view>
+  <view class="blocks">
+    对象绑定-学号： {{stu.id}}
+  </view>
+  <view class="blocks">
+    对象绑定-姓名： {{stu.name}}
+  </view>
+  <view class="blocks">
+    对象绑定-生日： {{stu.birth}}
+  </view>
+  <view class="blocks" wx:key="array" wx:for="{{array}}">
+    数据绑定-array[{{index}}]：{{item}}
+  </view>
+  <button type="primary" bindtap="modify">修改绑定数据</button>
+</view>

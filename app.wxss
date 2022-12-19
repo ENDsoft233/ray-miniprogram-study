@@ -22,3 +22,11 @@
   line-height: 36px;
   letter-spacing: 2px;
 }
+
+#tips {
+  text-align: center;
+  font-size: 16px;
+  color: darkgray;
+  border: 1px dotted darkgray;
+  margin: 0 16px;
+}

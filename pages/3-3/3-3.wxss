@@ -1,0 +1,8 @@
+/* pages/3-3/3-3.wxss */
+.blocks {
+  margin: 8px 16px;
+}
+
+button {
+  margin: 16px auto;
+}
