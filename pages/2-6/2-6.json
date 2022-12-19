@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#1A8919",
+  "navigationBarTitleText": "第二章"
 }
