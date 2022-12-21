@@ -1,0 +1,43 @@
+<!--pages/3-5/3-5.wxml-->
+<view id="box">
+  <view id="title">
+    条件渲染
+  </view>
+  <view>
+    <input wx:key="input" wx:for="{{['color','length']}}" type="text" id="{{item}}" placeholder="{{item}}" bindblur="dataInput" />
+  </view>
+  <view>
+    <view class="subtitle">
+      利用 view 中的 wx:if 进行条件渲染
+    </view>
+    <view class="floatItem" wx:if="{{color=='red'}}">
+      红色
+    </view>
+    <view class="floatItem" wx:elif="{{color=='green'}}">
+      绿色
+    </view>
+    <view class="floatItem" wx:elif="{{color=='blue'}}">
+      蓝色
+    </view>
+    <view class="floatItem" wx:else>
+      其他颜色
+    </view>
+    <view class="item" style="background-color: {{color}};" />
+  </view>
+  <view>
+    <view class="subtitle">
+      利用 block 中的 wx:if 进行条件渲染
+    </view>
+    <block wx:if="{{length > 10}}">
+      <view class="item redBack">
+        红色
+      </view>
+      <view class="item greenBack">
+        绿色
+      </view>
+      <view class="item blueBack">
+        蓝色
+      </view>
+    </block>
+  </view>
+</view>
