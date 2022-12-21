@@ -1,0 +1,9 @@
+<!--pages/3-4/3-4.wxml-->
+<view id="box">
+  <view id="title">
+    变量和函数的作用域及模块化
+  </view>
+  <view wx:key="msgs" wx:for="{{msg}}" class="listItem">
+    {{item}}
+  </view>
+</view>

@@ -9,5 +9,9 @@ App({
   },
   onHide: function(){
     console.log('app.js--onHide--小程序隐藏')
-  }
+  },
+
+  /* 3-4 */
+  globalMsg: 'a variable comes from app.js',
+  globalFunc: () => 'a function comes from app.js'
 })

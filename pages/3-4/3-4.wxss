@@ -1,0 +1,6 @@
+/* pages/3-4/3-4.wxss */
+.listItem {
+  color: darkblue;
+  margin: 0 16px;
+  line-height: 24px;
+}
