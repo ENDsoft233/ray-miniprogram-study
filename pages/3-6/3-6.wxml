@@ -1,0 +1,33 @@
+<!--pages/3-6/3-6.wxml-->
+<view id="box">
+  <view id="title">
+    成绩等级计算器
+  </view>
+  <input type="text" placeholder="请输入您的考试成绩" bindblur="dataInput" />
+  <view id="output">
+    <view>
+      成绩等级：
+    </view>
+    <view wx:if="{{score>100||score<0}}">
+      成绩输入有误。
+    </view>
+    <view wx:elif="{{score==100}}">
+      狗屁
+    </view>
+    <view wx:elif="{{score>=90}}">
+      优秀
+    </view>
+    <view wx:elif="{{score>=80}}">
+      良好
+    </view>
+    <view wx:elif="{{score>=70}}">
+      中等
+    </view>
+    <view wx:elif="{{score>=60}}">
+      及格
+    </view>
+    <view wx:else>
+      不及格
+    </view>
+  </view>
+</view>

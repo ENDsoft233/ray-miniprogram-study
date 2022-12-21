@@ -1,0 +1,11 @@
+/* pages/3-6/3-6.wxss */
+input {
+  margin: 16px;
+  border-bottom: solid 1px slateblue;
+}
+
+#output {
+  margin: 16px;
+  font-size: 18px;
+  display: flex;
+}
