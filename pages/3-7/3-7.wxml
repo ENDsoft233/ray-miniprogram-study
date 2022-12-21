@@ -1,0 +1,25 @@
+<!--pages/3-7/3-7.wxml-->
+<view id="box">
+  <view id="title">
+    列表渲染
+  </view>
+  <view id="tips">
+    index 和 item 重命名已经使用，请见代码。
+  </view>
+  <view wx:key="circles" wx:for="{{[{title:'绑定数组渲染',array:array},{title:'直接数组渲染',array:['春','夏','秋','冬']},{title:'对象渲染',array:object},{title:'字符串渲染',array:'杜春涛是谁啊？'}]}}">
+    <view class="subtitle">
+      {{index}} {{item.title}}
+    </view>
+    <view class="circle" wx:key="circle" wx:for="{{item.array}}" wx:for-item="innerItem" wx:for-index="innerIndex">
+      {{innerIndex}} : {{innerItem}}
+    </view>
+  </view>
+  <view>
+    <view class="subtitle">
+      4 利用 block 渲染多节点结构块
+    </view>
+    <block wx:key="blocks" wx:for="{{[0,1,2]}}">
+      <view wx:key="block" wx:for="{{['red','green','blue']}}" wx:for-item="innerItem" class="block" style="background-color: {{innerItem}};" />
+    </block>
+  </view>
+</view>

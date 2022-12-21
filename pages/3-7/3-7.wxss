@@ -1,0 +1,19 @@
+/* pages/3-7/3-7.wxss */
+.subtitle {
+  text-align: center;
+  color: grey;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.circle {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.block {
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  height: 5px;
+}
