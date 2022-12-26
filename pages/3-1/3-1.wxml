@@ -6,7 +6,7 @@
   <view id="tips">
     3-1 节内容实际为底下的 tabBar ，非本页展示的 navigator。
   </view>
-  <navigator wx:for='{{[{id:"3-1",title:"小程序的基本架构"},{id:"3-2",title:"小程序的执行顺序"},{id:"3-3",title:"数据及事件绑定"},{id:"3-4",title:"变量和函数的作用域及模块化"},{id:"3-5",title:"条件渲染"},{id:"3-6",title:"成绩等级计算器"},{id:"3-7",title:"列表渲染"}]}}' url='../{{item.id}}/{{item.id}}' wx:key="navigator">
+  <navigator wx:for='{{[{id:"3-1",title:"小程序的基本架构"},{id:"3-2",title:"小程序的执行顺序"},{id:"3-3",title:"数据及事件绑定"},{id:"3-4",title:"变量和函数的作用域及模块化"},{id:"3-5",title:"条件渲染"},{id:"3-6",title:"成绩等级计算器"},{id:"3-7",title:"列表渲染"},{id:"3-8",title:"九九乘法表"}]}}' url='../{{item.id}}/{{item.id}}' wx:key="navigator">
     <icon type="success" wx:if="{{index != 0}}" />
     <icon type="success_no_circle" wx:if="{{index == 0}}" />
     <text>{{item.id}} - {{item.title}}</text>
