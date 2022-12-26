@@ -1,0 +1,9 @@
+<!--pages/3-9/3-9.wxml-->
+<import src="template.wxml" />
+<view id="box">
+  <view id="title">
+    模板的定义和引用
+  </view>
+  <template is="student" wx:for="{{stu}}" data="{{...item}}" />
+  <template is="student" data='{{name:"王五",age:20,gender:"男"}}' />
+</view>

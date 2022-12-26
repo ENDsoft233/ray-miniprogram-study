@@ -1,0 +1,10 @@
+/* pages/3-9/3-9.wxss */
+#out-box {
+  margin: 8px;
+  border: 1px dotted seagreen;
+  padding: 8px;
+}
+
+.items {
+  line-height: 24px;
+}
