@@ -1,5 +1,12 @@
 /* pages/3-8/3-8.wxss */
-.inline-item{
+.inline-item {
   display: inline-block;
   width: 90px;
+}
+
+#subtitle {
+  text-align: center;
+  color: grey;
+  font-size: 14px;
+  margin: 8px 0;
 }
