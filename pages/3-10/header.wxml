@@ -1,0 +1,6 @@
+<!--pages/3-10/header.wxml-->
+<view id="header">
+  <view wx:for="{{['首页','博客','科研','动向','关于']}}" class="item{{item=='首页' ? ' actived' : ''}}">
+    {{item}}
+  </view>
+</view>

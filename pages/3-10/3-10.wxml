@@ -1,0 +1,11 @@
+<!--pages/3-10/3-10.wxml-->
+<view id="box">
+  <view id="title">
+    利用 include 引用文件
+  </view>
+  <include src="./header.wxml" />
+  <view id="body">
+    我是一个body
+  </view>
+  <include src="./footer.wxml" />
+</view>
