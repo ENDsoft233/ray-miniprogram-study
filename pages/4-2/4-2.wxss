@@ -1,0 +1,18 @@
+/* pages/4-2/4-2.wxss */
+.step {
+  color: grey;
+  margin-left: 8px;
+}
+.inputBox {
+  display: flex;
+  margin: 16px;
+}
+.inputTitle {
+  margin-right: 16px;
+}
+button,#title {
+  margin: 18px 0;
+}
+#result {
+  margin: 8px 16px;
+}

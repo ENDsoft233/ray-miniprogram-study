@@ -1,0 +1,27 @@
+<!--pages/4-2/4-2.wxml-->
+<view id="box">
+  <view id="title">
+    三角形面积计算器
+  </view>
+  <form bindsubmit="formSubmit">
+  <view class="step">
+    输入三条边长
+  </view>
+    <view wx:for="{{[1,2,3]}}" class="inputBox">
+      <view class="inputTitle">
+        边长
+      </view>
+      <input type="number" placeholder="第{{index}}条边长" name="side{{index}}" value="{{side[index]}}" class="input"/>
+    </view>
+    <view class="step">
+    点击计算按钮
+  </view>
+  <button type="primary" form-type="submit">计算</button>
+  </form>
+  <view class="step">
+    查看计算结果
+  </view>
+  <view id="result">
+    三角形面积为：{{area}}
+  </view>
+</view>
