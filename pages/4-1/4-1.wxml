@@ -1,0 +1,21 @@
+<!--pages/4-1/4-1.wxml-->
+<view id="box">
+  <view id="title">
+    货币兑换
+  </view>
+  <form bindsubmit="calc" bindreset="clear">
+    <input type="number" name="cels" id="input" placeholder="请输入人民币金额" />
+    <view id="action">
+      <button type="primary" form-type="submit">计算</button>
+      <button form-type="reset">清除</button>
+    </view>
+  </form>
+  <view id="output" hidden="{{!hasRes}}">
+    <view id="subtitle">
+      兑换结果
+    </view>
+    <view wx:for="{{labels}}" class="item">
+      兑换{{item}}为：{{results[index]}}
+    </view>
+  </view>
+</view>

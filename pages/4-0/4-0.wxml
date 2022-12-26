@@ -1,0 +1,14 @@
+<!--pages/4-0/4-0.wxml-->
+<view id="container">
+  <view id="title">
+    第四章
+  </view>
+  <view id="tips">
+    本页仅为导航非第四章内容
+  </view>
+  <navigator wx:for='{{[{id:"4-1",title:"货币兑换"}]}}' url='../{{item.id}}/{{item.id}}' wx:key="navigator">
+    <icon type="success" />
+    <text>{{item.id}} - {{item.title}}</text>
+    <image src="/images/right-arrow.png" />
+  </navigator>
+</view>
