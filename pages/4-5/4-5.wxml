@@ -1,0 +1,19 @@
+<!--pages/4-5/4-5.wxml-->
+<view id="box">
+  <view id="title">
+    轮播图和开关选择器
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="2000" duration="500">
+    <swiper-item wx:for="{{[['#1abc9c','TURQUOISE'],['#2ecc71','EMERALD'],['#3498db','PETER RIVER'],['#9b59b6','AMETHYST'],['#34495e','WET ASP']]}}">
+      <view class="swiperItem" style="background-color: {{item[0]}};">
+        <text class="label">{{item[1]}}</text>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class="switchFather" wx:for="{{[{title:'指示点',control:'indicatorDots',value:indicatorDots},{title:'自动播放',control:'autoplay',value:autoplay},{title:'衔接滑动',control:'circular',value:circular},{title:'竖向',control:'vertical',value:vertical}]}}">
+    <view class="subtitle">
+      {{item.title}}
+    </view>
+    <switch data-control="{{item.control}}" class="switch" checked="{{item.value}}" bindchange="switchChange" />
+  </view>
+</view>

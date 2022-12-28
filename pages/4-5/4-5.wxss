@@ -1,0 +1,27 @@
+/* pages/4-5/4-5.wxss */
+.switchFather {
+  display: flex;
+  margin: 8px 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid grey;
+}
+
+.switchFather .subtitle {
+  margin: auto 0;
+  flex: 1;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.swiperItem {
+  height: 200px;
+}
+
+.swiperItem .label {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  color: white;
+  font-weight: bold;
+  font-family: Cambria;
+}
