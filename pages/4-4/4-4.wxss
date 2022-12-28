@@ -1,0 +1,17 @@
+/* pages/4-4/4-4.wxss */
+#output {
+  height: 100px;
+}
+
+.sliderFather {
+  margin: 8px 16px;
+}
+
+.sliderFather .subtitle {
+  color: grey;
+}
+
+.sliderFather .slider {
+  margin-left: 32px;
+  margin-bottom: 16px;
+}

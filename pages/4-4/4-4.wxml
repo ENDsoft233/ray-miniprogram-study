@@ -1,0 +1,13 @@
+<!--pages/4-4/4-4.wxml-->
+<view id="box">
+  <view id="title">
+    滑动条和颜色
+  </view>
+  <view class="sliderFather" wx:for="{{[{data:'r',value:r,max:'255',step:'1',blockColor:'red',title:'红色'},{data:'g',value:g,max:'255',step:'1',blockColor:'green',title:'绿色'},{data:'b',value:b,max:'255',step:'1',blockColor:'blue',title:'蓝色'},{data:'a',value:a,max:'1',step:'0.01',blockColor:'purple',title:'透明度'}]}}">
+    <view class="subtitle">
+      {{item.title}}滑动条
+    </view>
+    <slider class="slider" data-color="{{item.data}}" value="{{item.value}}" max="{{item.max}}" step="{{item.step}}" block-color="{{item.blockColor}}" activeColor="{{item.blockColor}}" block-size="16" show-value="true" bindchanging="colorChanging" />
+  </view>
+  <view id="output" style="background-color: rgba({{r}},{{g}},{{b}},{{a}});" />
+</view>
