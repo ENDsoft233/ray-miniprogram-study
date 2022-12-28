@@ -1,0 +1,46 @@
+/* pages/4-6/4-6.wxss */
+.infoItem {
+  margin: 8px 16px;
+  display: flex;
+}
+
+.infoItem .subtitle {
+  margin-right: 8px;
+}
+
+.infoItem input,
+.infoItem .picked {
+  flex: 1;
+  border-bottom: 1px solid grey;
+}
+
+#submit {
+  width: 80%;
+  margin: 16px auto 32px;
+}
+
+.person {
+  margin: 16px;
+  padding: 8px;
+  border: 2px dotted grey;
+  border-radius: 16px;
+}
+
+.person .number {
+  text-align: center;
+  color: grey;
+  font-size: 18px;
+}
+
+.person .prop {
+  display: flex;
+}
+
+.person .prop .subtitle {
+  margin-right: 8px;
+  color: grey
+}
+
+.person .prop .value {
+  flex: 1
+}

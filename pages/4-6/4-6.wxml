@@ -1,0 +1,56 @@
+<!--pages/4-6/4-6.wxml-->
+<view id="box">
+  <view id="title">
+    个人信息填写
+  </view>
+  <view wx:for="{{[{title:'姓名',control:'name',placeholder:'请输入姓名',type:'text'},{title:'身高',control:'height',placeholder:'请输入身高，以厘米为单位',type:'number'},{title:'体重',control:'weight',placeholder:'请输入体重，以千克为单位',type:'number'}]}}" class="infoItem">
+    <view class="subtitle">
+      {{item.title}}
+    </view>
+    <input data-control="{{item.control}}" bindinput="handleInput" type="{{item.type}}" placeholder="{{item.placeholder}}" />
+  </view>
+  <picker data-control="gender" mode="selector" range="{{genders}}" bindchange="handlePick">
+    <view class="infoItem">
+      <view class="subtitle">
+        性别
+      </view>
+      <view class="picked">
+        {{genders[gender]}}
+      </view>
+    </view>
+  </picker>
+  <picker data-control="region" mode="region" bindchange="handlePick">
+    <view class="infoItem">
+      <view class="subtitle">
+        籍贯
+      </view>
+      <view class="picked">
+        {{region}}
+      </view>
+    </view>
+  </picker>
+  <picker data-control="date" mode="date" start="1900-01-01" end="2023-01-01" bindchange="handlePick">
+    <view class="infoItem">
+      <view class="subtitle">
+        出生日期
+      </view>
+      <view class="picked">
+        {{date}}
+      </view>
+    </view>
+  </picker>
+  <button bindtap="handleSubmit" id="submit" type="primary">添加人物 {{persons.length}}</button>
+  <view class="person" wx:for="{{persons}}">
+    <view class="number">
+      人物 {{index}}
+    </view>
+    <view wx:for="{{item}}" wx:for-item="value" wx:for-index="prop" class="prop">
+      <view class="subtitle">
+        {{dict[prop]}}
+      </view>
+      <view class="value">
+        {{prop==='sex'? genders[value]:value}}{{prop==='weight' ? 'kg' : prop ==='height' ? 'cm' : ''}}
+      </view>
+    </view>
+  </view>
+</view>
