@@ -1,0 +1,19 @@
+<!--pages/4-3/4-3.wxml-->
+<view id="box">
+  <view id="title">
+    设置字体样式和大小
+  </view>
+  <view id="display" style="font-weight:{{myBold}}; font-style:{{myItalic}}; text-decoration:{{myUnderline}}; font-size: {{mySize}};">上海大学</view>
+  <checkbox-group class="action" bindchange="checkboxChange">
+    <checkbox class="actionItem" value="isBold">加粗</checkbox>
+    <checkbox class="actionItem" value="isItalic">倾斜</checkbox>
+    <checkbox class="actionItem" value="isUnderline">下划线</checkbox>
+  </checkbox-group>
+  <radio-group class="action" bindchange="radioChange">
+    <radio class="actionItem" value="5px" disabled="true">5px</radio>
+    <radio class="actionItem" value="15px">15px</radio>
+    <radio class="actionItem" value="25px" checked="true">25px</radio>
+    <radio class="actionItem" value="35px">35px</radio>
+    <radio class="actionItem" value="65px" color="red">65px</radio>
+  </radio-group>
+</view>

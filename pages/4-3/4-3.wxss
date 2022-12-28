@@ -1,0 +1,16 @@
+/* pages/4-3/4-3.wxss */
+.action{
+  margin: 16px;
+}
+
+.action .actionItem{
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+#display {
+  margin: 32px;
+  padding: 16px 0;
+  text-align: center;
+  border: 5px dotted green;
+}
