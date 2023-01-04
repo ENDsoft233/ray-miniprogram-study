@@ -1,0 +1,16 @@
+<!--pages/4-7/4-7.wxml-->
+<view id="box">
+  <view id="title">
+    图片显示模式
+  </view>
+  <view class="imageBox" wx:for="{{imgModes}}">
+    <view class="subtitle">
+      <view class="line" />
+      <view class="content">
+        {{item}}
+      </view>
+      <view class="line" />
+    </view>
+    <image class="image" src="{{imgSrc}}" mode="{{item}}" />
+  </view>
+</view>
