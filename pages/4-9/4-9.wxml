@@ -1,0 +1,20 @@
+<!--pages/4-9/4-9.wxml-->
+<view id="box">
+  <view id="title">
+    视频演示
+  </view>
+  <view id="videoFather">
+    <video id="video" src="https://static.r-ay.cn/jntm.mp4" danmu-list="{{danmuList}}" enable-danmu controls autoplay/>
+  </view>
+  <view id="action">
+    <view id="subtitle">
+      发送弹幕
+    </view>
+    <input bindblur="inputBlur" value="{{inputValue}}" type="text" placeholder="善语结善缘，恶言伤人心~" />
+    <view id="quick">
+      <button bindtap="sendSpecialDanmu" type="default">鸡你太美</button>
+      <button bindtap="sendSpecialDanmu" type="default">鸡你太美</button>
+    </view>
+    <button bindtap="sendDanmu" type="primary">发送弹幕</button>
+  </view>
+</view>

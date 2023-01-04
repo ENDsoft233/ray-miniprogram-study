@@ -1,0 +1,32 @@
+/* pages/4-9/4-9.wxss */
+#videoFather {
+  margin: 32px auto;
+  display: flex;
+  justify-content: center;
+}
+
+#action {
+  margin: 16px 8px;
+}
+
+#action input {
+  width: 100%;
+  margin: 4px 0 8px;
+  border-bottom: 1px solid green;
+}
+
+#action button {
+  width: 100%;
+}
+
+#action #quick {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+#action #quick button {
+  width: 45%;
+  color: grey;
+  font-weight: normal;
+  font-size: 13px;
+}
