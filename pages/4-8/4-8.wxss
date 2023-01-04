@@ -1,0 +1,16 @@
+/* pages/4-8/4-8.wxss */
+#audioFather {
+  width: 100%;
+  margin: 16px auto;
+  display: flex;
+  align-items: center;
+}
+
+#audioFather audio {
+  margin: 0 auto;
+}
+
+#action button {
+  width: 80%;
+  margin: 16px auto;
+}

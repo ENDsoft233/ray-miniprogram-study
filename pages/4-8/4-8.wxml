@@ -1,0 +1,15 @@
+<!--pages/4-8/4-8.wxml-->
+<view id="box">
+  <view id="title">
+    音频演示
+  </view>
+  <view id="audioFather">
+    <audio src="https://static.r-ay.cn/dingzhen.mp3" poster="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fblog%2F202102%2F26%2F20210226195625_096a6.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1672387978&t=54eb923b6927cceff2d29af63e49e9d0" name="丁真在联合国上的发言.mp3" author="丁真珍珠" id="audio" controls loop />
+  </view>
+  <view id="action">
+    <button bindtap="audioPlay" type="default">播放</button>
+    <button bindtap="audioPause" type="default">暂停</button>
+    <button bindtap="audio61" type="primary">从第 61 秒起开始播放</button>
+    <button bindtap="audio0" type="default">从头开始播放</button>
+  </view>
+</view>
