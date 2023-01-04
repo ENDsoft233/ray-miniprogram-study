@@ -1,0 +1,25 @@
+<!--pages/4-10/detail.wxml-->
+<view id="box">
+  <view id="title">
+    考试时段选择
+  </view>
+  <view class="formItem" wx:for="{{[{control:'name',value:name,title:'姓名',type:'text'},{control:'stuid',value:stuid,title:'学号',type:'number'}]}}">
+    <view class="menu">
+      {{item.title}}
+    </view>
+    <input data-ctrl="{{item.control}}" bindblur="handleInputBlur" value="{{item.value}}" type="{{item.type}}" style="{{(item.control === 'email' && !emailError) ? 'color: red; border-bottom: 1px solid red;' : ''}}" />
+  </view>
+
+  <picker class="pickerItem" bindchange="handlePick" value="{{picked}}" range="{{sections}}">
+    <view>
+      请选择考试时间段：
+    </view>
+    <view class="pickerContent">
+      {{sections[picked]}}
+    </view>
+  </picker>
+  <view id="actions">
+    <button bindtap="handleAccept" type="primary">确认信息</button>
+    <button bindtap="handleRelogin" type="default">重新登录</button>
+  </view>
+</view>

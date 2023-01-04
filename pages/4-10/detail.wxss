@@ -1,0 +1,34 @@
+/* pages/4-10/detail.wxss */
+.pickerItem {
+  margin: 8px 16px;
+}
+
+.pickerItem .pickerContent {
+  margin-top: 4px;
+  text-align: center;
+}
+
+.formItem {
+  margin: 8px 16px;
+  display: flex;
+}
+
+.formItem .menu {
+  width: 64px;
+  margin-right: 8px;
+}
+
+.formItem input {
+  flex-grow: 1;
+  border-bottom: 1px solid grey;
+}
+
+#actions {
+  margin: 32px 16px;
+  display: flex;
+}
+
+#actions button {
+  margin: 0 8px;
+  font-weight: normal;
+}

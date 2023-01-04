@@ -1,0 +1,30 @@
+/* pages/4-10/4-10.wxss */
+.formItem {
+  margin: 8px 16px;
+  display: flex;
+}
+
+.formItem .menu {
+  width: 64px;
+  margin-right: 8px;
+}
+
+.formItem input {
+  flex-grow: 1;
+  border-bottom: 1px solid grey;
+}
+
+#loginBtn {
+  width: 60%;
+  margin: 32px auto;
+}
+
+#errors {
+  margin: 0 16px 16px;
+}
+
+#errors view {
+  color: red;
+  background-color: yellow;
+  margin: 4px;
+}

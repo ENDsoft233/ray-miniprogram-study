@@ -6,7 +6,7 @@
   <view id="tips">
     本页仅为导航非第四章内容
   </view>
-  <navigator wx:for='{{[{id:"4-1",title:"货币兑换"},{id:"4-2",title:"三角形面积计算器"},{id:"4-3",title:"设置字体样式和大小"},{id:"4-4",title:"滑动条和颜色"},{id:"4-5",title:"轮播图和开关选择器"},{id:"4-6",title:"个人信息填写"},{id:"4-7",title:"图片显示模式"},{id:"4-8",title:"音频演示"},{id:"4-9",title:"视频演示"}]}}' url='../{{item.id}}/{{item.id}}' wx:key="navigator">
+  <navigator wx:for='{{[{id:"4-1",title:"货币兑换"},{id:"4-2",title:"三角形面积计算器"},{id:"4-3",title:"设置字体样式和大小"},{id:"4-4",title:"滑动条和颜色"},{id:"4-5",title:"轮播图和开关选择器"},{id:"4-6",title:"个人信息填写"},{id:"4-7",title:"图片显示模式"},{id:"4-8",title:"音频演示"},{id:"4-9",title:"视频演示"},{id:"4-10",title:"考试场次选择"}]}}' url='../{{item.id}}/{{item.id}}' wx:key="navigator">
     <icon type="success" />
     <text>{{item.id}} - {{item.title}}</text>
     <image src="/images/right-arrow.png" />

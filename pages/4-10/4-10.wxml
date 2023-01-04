@@ -1,0 +1,18 @@
+<!--pages/4-10/4-10.wxml-->
+<view id="box">
+  <view id="title">
+    考试场次选择
+  </view>
+  <view class="formItem" wx:for="{{[{control:'email',value:email,title:'电子邮箱',type:'text'},{control:'pwd',value:pwd,title:'密码',type:'password'},{control:'pwd2',value:pwd2,title:'确认密码',type:'password'}]}}">
+    <view class="menu">
+      {{item.title}}
+    </view>
+    <input data-ctrl="{{item.control}}" bindblur="handleInputBlur" value="{{item.value}}" type="{{item.type}}" style="{{(item.control === 'email' && !emailError) ? 'color: red; border-bottom: 1px solid red;' : ''}}" />
+  </view>
+  <button type="primary" id="loginBtn" bindtap="handleLogin">登录</button>
+  <view id="errors">
+    <view wx:for="{{errorTexts}}">
+      {{item}}
+    </view>
+  </view>
+</view>
