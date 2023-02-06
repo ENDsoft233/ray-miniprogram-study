@@ -1,0 +1,8 @@
+/* pages/5-1/5-1.wxss */
+#faceFather{
+  width: 100%;
+  display:flex
+}
+#face {
+  margin: 0 auto;
+}

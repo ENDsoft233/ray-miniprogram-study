@@ -1,0 +1,9 @@
+<!--pages/5-1/5-1.wxml-->
+<view id="box">
+  <view id="title" bindtap="changeFace">
+    变脸游戏
+  </view>
+  <view id="faceFather">
+    <image src="{{imgs[index]}}" id="face" bindtap="changeFace" mode="widthFix"/>
+  </view>
+</view>
