@@ -17,7 +17,7 @@ Page({
   onLoad(options) {
     let files = []
     for(let i = 1;i<=10;i++) {
-      files.push(`/images/5-1/${('0' + i).substr(0,2)}.jpg`)
+      files.push(`/images/5-1/${('0' + i).substr(-2)}.jpg`)
     }
     this.setData({
       imgs: files
