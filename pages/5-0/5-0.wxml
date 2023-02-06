@@ -1,0 +1,14 @@
+<!--pages/4-0/4-0.wxml-->
+<view id="container">
+  <view id="title">
+    第五章
+  </view>
+  <view id="tips">
+    本页仅为导航非第五章内容
+  </view>
+  <navigator wx:for='{{[]}}' url='../{{item.id}}/{{item.id}}' wx:key="navigator">
+    <icon type="success" />
+    <text>{{item.id}} - {{item.title}}</text>
+    <image src="/images/right-arrow.png" />
+  </navigator>
+</view>

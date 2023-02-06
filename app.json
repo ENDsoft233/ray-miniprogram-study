@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/5-0/5-0",
     "pages/4-10/detail",
     "pages/4-10/4-10",
     "pages/4-9/4-9",
@@ -72,6 +73,12 @@
         "text": "第四章",
         "iconPath": "/images/zixun-off.png",
         "selectedIconPath": "/images/zixun-on.png"
+      },
+      {
+        "pagePath": "pages/5-0/5-0",
+        "text": "第五章",
+        "iconPath": "/images/pengyou.png",
+        "selectedIconPath": "/images/pengyoufill.png"
       }
     ]
   },
