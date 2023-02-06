@@ -1,0 +1,18 @@
+<!--pages/5-2/5-2.wxml-->
+<view id="box">
+  <view id="title">
+    阶乘计算器
+  </view>
+  <view>
+    <view id="subtitle">
+    请输入要求阶乘的数
+  </view>
+  <input bindinput="dataInput" type="number" id="input" placeholder="输入整数"/>
+  </view>
+  <view wx:if="{{inputed && !calced}}" class="res" bindtap="calc">
+    摇一摇以计算。
+  </view>
+  <view wx:if="{{calced}}" class="res" bindtap="calc">
+    {{res}}
+  </view>
+</view>

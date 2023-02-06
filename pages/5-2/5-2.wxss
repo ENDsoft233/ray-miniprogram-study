@@ -1,0 +1,16 @@
+/* pages/5-2/5-2.wxss */
+#subtitle {
+  font-size: 12px;
+  color:grey;
+  margin: 0 0 -2px 16px;
+}
+
+#input {
+  margin: 0 16px 32px;
+  border-bottom: 1px solid #1e63fa;
+}
+
+.res {
+  margin: 32px 16px;
+  font-size: 18px;
+}
