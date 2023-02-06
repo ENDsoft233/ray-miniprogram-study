@@ -15,14 +15,14 @@ Page({
   },
 
   onLoad(options) {
-    const imgDir = fs.readdirSync('/images/5-1')
     let files = []
-    imgDir.forEach(v => {
-      files.push('/images/5-1/' + v)
-      this.setData({
-        imgs: files
-      })
+    for(let i = 1;i<=10;i++) {
+      files.push(`/images/5-1/${('0' + i).substr(0,2)}.jpg`)
+    }
+    this.setData({
+      imgs: files
     })
+    console.log(files)
   },
 
   onShow() {
@@ -30,6 +30,7 @@ Page({
       if (res.x > 0.5 || res.y > 0.5 || res.z > 0.5) {
         wx.showToast({
           title: '摇一摇..',
+          duration: 1000
         })
         this.changeFace()
       }
