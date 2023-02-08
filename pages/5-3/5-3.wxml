@@ -4,7 +4,7 @@
     基本绘图
   </view>
   <view id="cvsFather">
-    <canvas canvas-id="cvs" id="cvs"/>
+    <canvas canvas-id="cvs" id="cvs" />
   </view>
   <view wx:for="{{[[{action:'clear',title:'清除'},{action:'drawDot',title:'画点'},{action:'drawCircle',title:'画圆'}],[{action:'drawDash',title:'画虚线'},{action:'capAndJoin',title:'端点交点'},{action:'drawText',title:'画字'}],[{action:'circularGrad',title:'圆形渐变'},{action:'shadowRect',title:'阴影矩形'},{action:'translucent',title:'半透明'}]]}}" class="btnLayout" wx:for-item="btnGroup">
     <button wx:for="{{btnGroup}}" data-action="{{item.action}}" type="primary" class="btn" bindtap="handleClick">{{item.title}}</button>

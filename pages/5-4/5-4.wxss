@@ -1,0 +1,28 @@
+/* pages/5-4/5-4.wxss */
+#cvs {
+  width: 100%;
+  height: 300px;
+}
+
+.inputUnit {
+  margin: 8px 16px;
+}
+
+.inputUnit view {
+  font-size: 14px;
+  color: grey;
+}
+
+.inputUnit input {
+  margin-Left: 4px;
+  border-bottom: 1px dashed grey;
+}
+
+#action {
+  display: flex;
+  margin: 16px;
+}
+
+#action button {
+  margin: 0 16px;
+}

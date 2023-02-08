@@ -1,0 +1,21 @@
+<!--pages/5-4/5-4.wxml-->
+<view id="box">
+  <view id="title">
+    参数绘图
+  </view>
+  <canvas canvas-id="cvs" id="cvs" />
+  <form bindsubmit="handleFormSubmit" bindreset="handleFormReset">
+    <view id="datas">
+      <view wx:for='{{[{name:"圆心横坐标",prop:"x"},{name:"圆心纵坐标",prop:"y"},{name:"圆半径",prop:"r"}]}}' class="inputUnit">
+        <view>
+          {{item.name}}
+        </view>
+        <input type="number" name="{{item.prop}}" placeholder="请输入{{item.prop}}" />
+      </view>
+    </view>
+    <view id="action">
+      <button form-type="submit" type="primary">画圆</button>
+      <button form-type="reset">清空</button>
+    </view>
+  </form>
+</view>
