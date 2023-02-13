@@ -1,0 +1,16 @@
+<!--pages/5-7/5-7.wxml-->
+<view id="box">
+  <view id="title">
+    自由绘图
+  </view>
+  <view id="cvsDad">
+    <canvas canvas-id="cvs" id="cvs" disable-scroll="true" bindtouchstart='touchStart' bindtouchmove="touchMove" bindtouchend="touchEnd" />
+  </view>
+  <view id="actionDepart">
+    <view class="actions" wx:for='{{[[{title:"钢笔",action:"penSelect", val:"5"},{title:"红色",action:"colorSelect", val:"red"},{title:"擦除",action:"clear", val:""}],[{title:"毛笔",action:"penSelect", val:"15"},{title:"蓝色",action:"colorSelect", val:"blue"},{title:"清屏",action:"clearAll", val:""}]]}}' wx:for-item="actions">
+      <view class="action" hover-class="actionHovered" wx:for="{{actions}}" data-action="{{item.action}}" data-val="{{item.val}}" bindtap="handleAction" type="primary">
+        {{item.title}}
+      </view>
+    </view>
+  </view>
+</view>
