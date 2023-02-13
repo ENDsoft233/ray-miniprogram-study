@@ -1,0 +1,9 @@
+<!--pages/5-6/5-6.wxml-->
+<view id="box">
+  <view id="title">
+    绘制正弦曲线
+  </view>
+  <view id="cvsDad">
+    <canvas canvas-id="cvs" id="cvs" />
+  </view>
+</view>
