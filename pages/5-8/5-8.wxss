@@ -1,0 +1,31 @@
+/* pages/5-8/5-8.wxss */
+#animation-area {
+  display: flex;
+  width: 100%;
+  padding-top: 150rpx;
+  padding-bottom: 150rpx;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgb(230, 230, 230, 0.3);
+  border: 1px solid sandybrown;
+  margin-bottom: 10px;
+}
+
+#animation-element {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #1aad19;
+}
+
+.action {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8px 4px;
+}
+
+.action button {
+  font-weight: normal;
+  border: 1px solid grey;
+  margin: 0 4px;
+  flex: 1;
+}
