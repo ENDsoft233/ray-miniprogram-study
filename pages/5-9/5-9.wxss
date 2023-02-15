@@ -1,0 +1,20 @@
+/* pages/5-9/5-9.wxss */
+.area {
+  margin: 16px 0;
+}
+
+.area button {
+  width: 200px;
+  font-weight: normal;
+  border: 0.5px dashed grey;
+  margin-bottom: 8px;
+}
+
+#image image {
+  background-color: gainsboro;
+}
+
+.display {
+  height: 200px;
+  width: 100%;
+}

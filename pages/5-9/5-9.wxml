@@ -1,0 +1,19 @@
+<!--pages/5-9/5-9.wxml-->
+<view id="box">
+  <view id="title">
+    照相和摄像
+  </view>
+  <view class="area" id="image">
+    <button data-get="image" bindtap="handleClick">
+      获取图片
+    </button>
+    <image class="display" src="{{imgPath}}" mode="scaleToFill" />
+  </view>
+  <view class="area" id="video">
+    <button data-get="video" bindtap="handleClick">
+      获取视频
+    </button>
+    <video class="display" src="{{videoPath}}" />
+  </view>
+  <button data-get="data" bindtap="handleClick">获取数据</button>
+</view>
