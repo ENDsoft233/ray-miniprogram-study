@@ -1,0 +1,17 @@
+<!--pages/5-10/5-10.wxml-->
+<view id="box">
+  <view id="title">
+    位置和地图
+  </view>
+  <view>
+    <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" show-location />
+  </view>
+  <view id="actions">
+    <button bindtap="chooseLocation">
+      选择位置
+    </button>
+    <button bindtap="openLocation">
+      打开位置
+    </button>
+  </view>
+</view>
