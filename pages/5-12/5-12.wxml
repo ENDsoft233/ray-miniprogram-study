@@ -1,0 +1,12 @@
+<!--pages/5-12/5-12.wxml-->
+<view id="box">
+  <view id="title">
+    缓存操作
+  </view>
+  <view class="actions" wx:for="{{[{title:'存储数据',action:'set'},{title:'获取数据',action:'get'},{title:'缓存数据',action:'info'},{title:'删除数据',action:'remove'}]}}" wx:for-item="action">
+    <button type="primary" wx:for="{{['异步','同步']}}" wx:for-index="i" data-action="{{action.action}}{{i===1 ? 'Sync' : ''}}" bindtap="handleClick">{{item}}{{action.title}}</button>
+  </view>
+  <view hidden="{{hidden}}" id="output">
+    <text>{{msg}}</text>
+  </view>
+</view>

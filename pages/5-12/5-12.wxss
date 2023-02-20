@@ -1,0 +1,18 @@
+/* pages/5-12/5-12.wxss */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 16px;
+}
+
+.actions button {
+  width: 150px;
+  font-weight: normal;
+}
+
+#output {
+  margin: 16px;
+  padding: 8px;
+  color: purple;
+  border: 1px dotted purple;
+}
