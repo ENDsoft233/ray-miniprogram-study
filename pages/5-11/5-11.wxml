@@ -1,0 +1,13 @@
+<!--pages/5-11/5-11.wxml-->
+<view id="box">
+  <view id="title">
+    文件操作
+  </view>
+  <image src="{{imgPath}}" />
+  <view class="actions" wx:for="{{[[{title:'打开文件',action:'open'},{title:'保存文件',action:'save'}],[{title:'文件信息',action:'info'},{title:'删除文件',action:'del'}]]}}" wx:for-item="btn">
+    <button type="primary" data-action="{{item.action}}" bindtap="handleClick" wx:for="{{btn}}">{{item.title}}</button>
+  </view>
+  <view hidden="{{hidden}}" id="output">
+    {{msg}}
+  </view>
+</view>
