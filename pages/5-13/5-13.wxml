@@ -1,0 +1,22 @@
+<!--pages/5-13/5-13.wxml-->
+<view id="box">
+  <view id="title">
+    网络状态
+  </view>
+  <view class="display">
+    当前网络状态是：{{status}}
+  </view>
+  <button type="primary" id="mainBtn" bindtap='handleClick'>Wi-Fi 状态</button>
+  <view class="display">
+    SSID: {{res.SSID}}
+  </view>
+  <view class="display">
+    BSSID: {{res.BSSID}}
+  </view>
+  <view class="display">
+    安全性： {{res.secure}}
+  </view>
+  <view class="display">
+    信号强度：{{res.signalStrength}}
+  </view>
+</view>

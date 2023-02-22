@@ -1,0 +1,9 @@
+/* pages/5-13/5-13.wxss */
+#mainBtn {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.display {
+  margin: 8px;
+}
