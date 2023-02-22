@@ -1,0 +1,29 @@
+/* pages/5-15/5-15.wxss */
+.scan {
+  margin: 4px 16px;
+}
+
+button {
+  width: 300px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#phoneInput {
+  margin: 16px 16px 8px;
+}
+
+#phoneInput input {
+  margin: 4px auto;
+  border-bottom: 1px solid #07c160;
+}
+
+#phoneAct {
+  margin: 8px 16px 16px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#phoneAct button {
+  width: 150px;
+}

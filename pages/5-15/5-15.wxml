@@ -1,0 +1,20 @@
+<!--pages/5-15/5-15.wxml-->
+<view id="box">
+  <view id="title">
+    扫码与打电话
+  </view>
+  <button type="primary" bindtap="scanCode">开始扫码</button>
+  <view>
+    <view class="scan" wx:for="{{[{t:'字符集',v:res.charSet},{t:'扫码类型',v:res.scanType},{t:'扫码结果',v:res.result}]}}">
+      {{item.t}}：{{item.v}}
+    </view>
+  </view>
+  <view id="phoneInput">
+    <input type="text" placeholder="请输入联系人姓名" bindblur="inputName" />
+    <input type="number" placeholder="请输入联系人电话" bindblur="inputPhone" />
+  </view>
+  <view id="phoneAct">
+    <button type="primary" bindtap="call">拨打电话</button>
+    <button type="primary" bindtap="addContact">添加联系人</button>
+  </view>
+</view>
