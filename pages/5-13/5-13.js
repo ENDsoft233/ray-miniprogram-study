@@ -27,6 +27,16 @@ Page({
   },
 
   handleClick() {
+    wx.startWifi({
+      success: r=> wx.showToast({
+        title: 'wifi 启动成功',
+        icon: 'none'
+      }),
+      fail: r => wx.showToast({
+        title: 'wifi 启动失败',
+        icon: 'none'
+      })
+    })
     wx.getConnectedWifi({
       success: r => {
         this.setData({

@@ -6,7 +6,7 @@
   <view id="tips">
     本页仅为导航非第五章内容
   </view>
-  <navigator wx:for='{{[{id:"5-1",title:"变脸游戏"},{id:"5-2",title:"阶乘计算器"},{id:"5-3",title:"基本绘图"},{id:"5-4",title:"参数绘图"},{id:"5-5",title:"改变图形"},{id:"5-6",title:"绘制正弦曲线"},{id:"5-7",title:"自由绘图"},{id:"5-8",title:"动画"},{id:"5-9",title:"照相和摄像"},{id:"5-10",title:"位置和地图"},{id:"5-11",title:"文件操作"},{id:"5-12",title:"缓存操作"},{id:"5-13",title:"网络状态"}]}}' url='../{{item.id}}/{{item.id}}' wx:key="navigator">
+  <navigator wx:for='{{[{id:"5-1",title:"变脸游戏"},{id:"5-2",title:"阶乘计算器"},{id:"5-3",title:"基本绘图"},{id:"5-4",title:"参数绘图"},{id:"5-5",title:"改变图形"},{id:"5-6",title:"绘制正弦曲线"},{id:"5-7",title:"自由绘图"},{id:"5-8",title:"动画"},{id:"5-9",title:"照相和摄像"},{id:"5-10",title:"位置和地图"},{id:"5-11",title:"文件操作"},{id:"5-12",title:"缓存操作"},{id:"5-13",title:"网络状态"},{id:"5-14",title:"传感器"}]}}' url='../{{item.id}}/{{item.id}}' wx:key="navigator">
     <icon type="success" />
     <text>{{item.id}} - {{item.title}}</text>
     <image src="/images/right-arrow.png" />

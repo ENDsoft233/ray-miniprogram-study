@@ -1,0 +1,16 @@
+<!--pages/5-14/5-14.wxml-->
+<view id="box">
+  <view id="title">
+    传感器
+  </view>
+  <view wx:for="{{[{action:{title:'罗盘监听',name:'luopan'},datas:[{title:'罗盘方位角',value:resLuopan.direction},{title:'罗盘精度',value:resLuopan.accuracy}]},{action:{title:'加速度计',name:'jiasudu'},datas:[{title:'X 轴方向加速度',value:resJiasudu.x},{title:'Y 轴方向加速度',value:resJiasudu.y},{title:'Z 轴方向加速度',value:resJiasudu.z}]},{action:{title:'陀螺仪',name:'tuoluoyi'},datas:[{title:'X 轴方向加速度',value:resTuoluoyi.x},{title:'Y 轴方向加速度',value:resTuoluoyi.y},{title:'Z 轴方向加速度',value:resTuoluoyi.z}]}]}}" wx:for-item="actions" class="actionLayout">
+    <view class="btns">
+      <button data-a="{{actions.action.name}}" data-v="{{item.value}}" bindtap="handleClick" type="primary" wx:for="{{[{name:'启动',value:'start'},{name:'停止',value:'stop'}]}}">{{item.name}}{{actions.action.title}}</button>
+    </view>
+    <view class="datas">
+      <view wx:for="{{actions.datas}}">
+        {{item.title}}: {{item.value}}
+      </view>
+    </view>
+  </view>
+</view>
